@@ -35,6 +35,9 @@ font pango:monospace 8
 # The plasma login screen lingers as background without this
 exec --no-startup-id xsetroot -solid "#000000"
 
+# Screensaver (cargo install xidlehook)
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'i3lock -c 000000 -n' ''
+
 # Pulse Audio controls
 # To list the sinks run: pactl list sinks
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
