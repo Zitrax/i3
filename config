@@ -56,6 +56,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# Sleep / Suspend
+bindsym $mod+Shift+s exec systemctl suspend
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
